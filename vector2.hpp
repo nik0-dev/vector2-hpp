@@ -32,9 +32,9 @@ public:
     // Static methods
     static Vector2<T> Add(const Vector2& vec_a, const Vector2& vec_b) { return Vector2(vec_a.x + vec_b.x, vec_a.y + vec_b.y); }
     static Vector2<T> Subtract(const Vector2& vec_a, const Vector2& vec_b) { return Vector2(vec_a.x - vec_b.x, vec_a.y - vec_b.y); }
-    static Vector2<T> Multiply(const Vector2& vec_a, T op_b) { return Vector2(vec_a.x * op_b, vec_a.y * op_b); }
+    static Vector2<T> Multiply(const Vector2& vec_a, T op) { return Vector2(vec_a.x * op, vec_a.y * op); }
     static Vector2<T> Multiply(const Vector2& vec_a, const Vector2& vec_b) { return Vector2(vec_a.x * vec_b.x, vec_a.y * vec_b.y); }
-    static Vector2<T> Divide(const Vector2& vec_a, T op_b) { return Vector2(vec_a.x / op_b, vec_a.y / op_b); }
+    static Vector2<T> Divide(const Vector2& vec_a, T op) { return Vector2(vec_a.x / op, vec_a.y / op); }
     static Vector2<T> Divide(const Vector2& vec_a, const Vector2& vec_b) { return Vector2(vec_a.x / vec_b.x, vec_a.y / vec_b.y); }
     static bool Equals(const Vector2& vec_a, const Vector2& vec_b) { return vec_a.x == vec_b.x && vec_a.y == vec_b.y; }
     static Vector2<T> Max(const Vector2& vec_a, const Vector2& vec_b) { return Vector2(std::max(vec_a.x, vec_b.x), std::max(vec_a.y, vec_b.y)); }
