@@ -41,11 +41,11 @@ public:
     static Vector2<T> Min(const Vector2& vec_a, const Vector2& vec_b) { return Vector2(std::min(vec_a.x, vec_b.x), std::min(vec_a.y, vec_b.y)); }
 
     // public methods
-    std::string ToString() const { return "(" + std::to_string(x) + "," + std::to_string(y) + ")"; }
+    std::string ToString() const { return "(" + std::to_string(x) + ", " + std::to_string(y) + ")"; }
     
     std::string ToString(int precision) const { 
         std::stringstream ss;
-        ss << std::fixed << std::setprecision(precision) << "(" << x << "," << y << ")"; 
+        ss << std::fixed << std::setprecision(precision) << "(" << x << ", " << y << ")"; 
         return ss.str();
     }
 
